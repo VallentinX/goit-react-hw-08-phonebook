@@ -1,0 +1,22 @@
+@import "normalize.css"; /* adaugă stilurile normalize.css */
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  /* background: linear-gradient(to left top, #000851, #fff); */
+  background: linear-gradient(to left top, #f06, #000);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
