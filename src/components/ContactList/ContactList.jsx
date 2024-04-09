@@ -16,7 +16,6 @@ import {
   Label as ListLabel,
   ListItem as ListItems,
   ErrorMessage as ErrorMsg,
-  AddContact,
 } from "./ContactList.style";
 import { Loader } from "components/Loader";
 
