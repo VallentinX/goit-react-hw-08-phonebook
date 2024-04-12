@@ -4,7 +4,7 @@ import { contactsReducer } from "./contacts/contacts-slice";
 
 import { filterReducer } from "./filter/filter-slice";
 
-import { authReducer } from "./auth/auth-slice";
+import { authReducer } from "./auth/slice";
 
 import {
   FLUSH,

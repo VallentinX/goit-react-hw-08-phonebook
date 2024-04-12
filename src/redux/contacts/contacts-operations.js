@@ -13,7 +13,7 @@ export const fetchContacts = createAsyncThunk(
     try {
       const response = await axios.get("/contacts");
 
-      console.log("Datele din API:", response.data);
+      console.log("Data from API:", response.data);
 
       return response.data;
     } catch (error) {

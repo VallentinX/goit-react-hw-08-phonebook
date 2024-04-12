@@ -4,7 +4,7 @@ import { useDispatch } from "react-redux";
 
 import { RestrictedRoute } from "./RestrictedRoute";
 import { PrivateRoute } from "./PrivateRoute";
-import { refreshUser } from "../redux/auth/auth-operations";
+import { refreshUser } from "../redux/auth/operations";
 import { Container } from "./App.style";
 import { Layout } from "./Layout";
 import { Loader } from "./Loader";

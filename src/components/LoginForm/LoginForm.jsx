@@ -2,7 +2,7 @@ import { useDispatch } from "react-redux";
 import { Form, Input, Button, Checkbox } from "antd";
 import { LockOutlined, UserOutlined } from "@ant-design/icons";
 
-import { logIn } from "../../redux/auth/auth-operations";
+import { logIn } from "../../redux/auth/operations";
 
 const LoginForm = () => {
   const dispatch = useDispatch();

@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 
-import { register } from "../../redux/auth/auth-operations";
+import { register } from "../../redux/auth/operations";
 
 import { Button, Form, Input } from "antd";
 
@@ -51,7 +51,7 @@ const RegisterForm = () => {
         rules={[
           {
             type: "email",
-            message: "The input is not valid E-mail!",
+            message: "E-mail is not valid!",
           },
           {
             required: false,
@@ -89,9 +89,7 @@ const RegisterForm = () => {
               if (!value || getFieldValue("password") === value) {
                 return Promise.resolve();
               }
-              return Promise.reject(
-                new Error("The new password that you entered do not match!")
-              );
+              return Promise.reject(new Error("Passwords does not match!"));
             },
           }),
         ]}
