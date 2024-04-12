@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/goit-react-hw-08-phonebook/static/css/main.4203bcb2.css",
-    "main.js": "/goit-react-hw-08-phonebook/static/js/main.ffec2bac.js",
+    "main.js": "/goit-react-hw-08-phonebook/static/js/main.f4db68f2.js",
     "static/js/462.141f7af2.chunk.js": "/goit-react-hw-08-phonebook/static/js/462.141f7af2.chunk.js",
-    "static/js/957.2772cfe2.chunk.js": "/goit-react-hw-08-phonebook/static/js/957.2772cfe2.chunk.js",
+    "static/js/957.d6522cd0.chunk.js": "/goit-react-hw-08-phonebook/static/js/957.d6522cd0.chunk.js",
     "static/js/924.ef8530dd.chunk.js": "/goit-react-hw-08-phonebook/static/js/924.ef8530dd.chunk.js",
     "static/js/221.e7e97383.chunk.js": "/goit-react-hw-08-phonebook/static/js/221.e7e97383.chunk.js",
     "static/js/267.6525783f.chunk.js": "/goit-react-hw-08-phonebook/static/js/267.6525783f.chunk.js",
@@ -11,9 +11,9 @@
     "static/js/187.75d88288.chunk.js": "/goit-react-hw-08-phonebook/static/js/187.75d88288.chunk.js",
     "index.html": "/goit-react-hw-08-phonebook/index.html",
     "main.4203bcb2.css.map": "/goit-react-hw-08-phonebook/static/css/main.4203bcb2.css.map",
-    "main.ffec2bac.js.map": "/goit-react-hw-08-phonebook/static/js/main.ffec2bac.js.map",
+    "main.f4db68f2.js.map": "/goit-react-hw-08-phonebook/static/js/main.f4db68f2.js.map",
     "462.141f7af2.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/462.141f7af2.chunk.js.map",
-    "957.2772cfe2.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/957.2772cfe2.chunk.js.map",
+    "957.d6522cd0.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/957.d6522cd0.chunk.js.map",
     "924.ef8530dd.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/924.ef8530dd.chunk.js.map",
     "221.e7e97383.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/221.e7e97383.chunk.js.map",
     "267.6525783f.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/267.6525783f.chunk.js.map",
@@ -22,6 +22,6 @@
   },
   "entrypoints": [
     "static/css/main.4203bcb2.css",
-    "static/js/main.ffec2bac.js"
+    "static/js/main.f4db68f2.js"
   ]
 }
