@@ -1,20 +1,19 @@
-import { useState } from "react"; // Import useState hook
-import { useDispatch, useSelector } from "react-redux"; // Importing useSelector hook
+import { useDispatch, useSelector } from "react-redux";
 import { Form, Input, Button, Checkbox } from "antd";
 import { LockOutlined, UserOutlined } from "@ant-design/icons";
 
 import { logIn } from "../../redux/auth/operations";
-import { selectError } from "../../redux/auth/selectors"; // Importing selectError selector
+import { selectError } from "../../redux/auth/selectors";
 
 const LoginForm = () => {
   const dispatch = useDispatch();
-  const errorMessage = useSelector(selectError); // Using useSelector hook to get error message
+  const errorMessage = useSelector(selectError);
 
   const onFinish = async (values) => {
     try {
       await dispatch(logIn(values));
     } catch (error) {
-      // Error handling moved to redux, no need for local error state
+      console.log(error);
     }
   };
 

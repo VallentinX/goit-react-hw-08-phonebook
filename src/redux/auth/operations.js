@@ -20,7 +20,6 @@ export const register = createAsyncThunk(
       const res = await axios.post("/users/signup", credentials);
       setAuthHeader(res.data.token);
 
-      // Automatically log in after registration
       await thunkAPI.dispatch(logIn(credentials));
 
       return res.data;

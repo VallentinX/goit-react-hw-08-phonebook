@@ -8,7 +8,7 @@ const authSlice = createSlice({
     token: null,
     isLoggedIn: false,
     isRefreshing: false,
-    error: null, // Add error field to store error message
+    error: null,
   },
   reducers: {},
   extraReducers: (builder) => {
@@ -17,10 +17,10 @@ const authSlice = createSlice({
         state.user = action.payload.user;
         state.token = action.payload.token;
         state.isLoggedIn = true;
-        state.error = null; // Clear error on successful login
+        state.error = null;
       })
       .addCase(logIn.rejected, (state, action) => {
-        state.error = action.payload; // Store error message
+        state.error = action.payload;
       })
       .addCase(logOut.fulfilled, (state) => {
         state.user = { name: null, email: null };
