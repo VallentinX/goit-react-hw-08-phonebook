@@ -1,7 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-
 import { register } from "../../redux/auth/operations";
-
 import { Button, Form, Input } from "antd";
 
 const RegisterForm = () => {
@@ -15,6 +13,12 @@ const RegisterForm = () => {
     if (password === confirm) {
       dispatch(register({ name, email, password }));
       !isLoading && !error && form.resetFields();
+    }
+  };
+
+  const handleKeyDown = (e) => {
+    if (e.key === "Enter") {
+      form.submit();
     }
   };
 
@@ -59,7 +63,7 @@ const RegisterForm = () => {
           },
         ]}
       >
-        <Input placeholder="E-mail" />
+        <Input placeholder="E-mail" onKeyDown={handleKeyDown} />
       </Form.Item>
 
       <Form.Item
@@ -72,7 +76,7 @@ const RegisterForm = () => {
         ]}
         hasFeedback
       >
-        <Input.Password placeholder="Password" />
+        <Input.Password placeholder="Password" onKeyDown={handleKeyDown} />
       </Form.Item>
 
       <Form.Item
@@ -94,7 +98,10 @@ const RegisterForm = () => {
           }),
         ]}
       >
-        <Input.Password placeholder="Confirm Password" />
+        <Input.Password
+          placeholder="Confirm Password"
+          onKeyDown={handleKeyDown}
+        />
       </Form.Item>
 
       <Form.Item
@@ -107,11 +114,11 @@ const RegisterForm = () => {
           },
         ]}
       >
-        <Input placeholder="Name" />
+        <Input placeholder="Name" onKeyDown={handleKeyDown} />
       </Form.Item>
 
       <Form.Item {...tailFormItemLayout}>
-        <Button type="primary" htmlType="submit">
+        <Button type="primary" htmlType="submit" onClick={() => form.submit()}>
           Register
         </Button>
       </Form.Item>
